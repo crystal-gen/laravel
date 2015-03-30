@@ -1,0 +1,13 @@
+<?php
+public function up()
+{
+	{{#models}}
+	# create {{model.name.plural.snake}} table
+	Schema::create('{{model.name.plural.snake}}', function(Blueprint $table) {
+		{{#details}}
+		$table->{{detail.type}}('{{detail.name.snake}}');
+		{{/details}}
+	});
+	
+	{{/models}}
+}

@@ -1,0 +1,22 @@
+name: laravel
+version: 1.0.1
+description: "[Laravel](http://laravel.com) framework for [Crystal](https://crystalcodegen.com)."
+
+author:
+  name: Chris Tate
+  email: chris@studiotate.com
+  url: http://studiotate.com
+copyright: 2015 Studio Tate
+
+gen:
+  file:
+    model:
+      data: models
+      dest: "Model/{{model.name.pascal}}.php"
+    seed:
+      data: models
+      dest: "Seed/{{model.name.pascal}}.php"
+
+generators:
+  project:
+    version: latest

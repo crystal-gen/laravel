@@ -1,0 +1,17 @@
+<?php
+/**
+ * {{model.name.pascal}}TableSeeder seed
+ */
+class {{model.name.pascal}}TableSeeder extends Seeder {
+	public function run() {
+		DB::table('{{model.name.plural.snake}}')->delete();
+		
+		{{#data}}
+		{{model.name.pascal}}::create(array(
+			{{#details}}
+			'{{detail.name.snake}}' => {{detail.value}},
+			{{/details}}
+		));
+		{{/data}}
+	}
+}
