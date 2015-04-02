@@ -1,6 +1,6 @@
 name: laravel
 version: 0.1.0
-description: "[Laravel](http://laravel.com) framework for [Crystal](https://crystalcodegen.com)."
+description: "[Laravel](http://laravel.com) framework for [Crystal](http://crystal.sh)."
 
 author:
   name: Chris Tate
